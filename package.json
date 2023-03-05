@@ -2,7 +2,8 @@
   "name": "github-actions",
   "version": "1.0.0",
   "scripts": {
-    "test": "mocha --parallel --jobs 2 -r test/base.test.js"
+    "test:parallel": "mocha -g @todo --parallel --jobs 2 -r test/base-parallel.test.js",
+    "test:single": "mocha -g @todo"
   },
   "dependencies": {
     "mocha": "^10.0.0"
